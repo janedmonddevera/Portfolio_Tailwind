@@ -1,0 +1,515 @@
+<!doctype html>
+<html  style="scroll-behavior: smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  
+  <title>Edmond De Vera</title>
+  <link rel="icon" href="/images/logo.png">
+  <script src="https://kit.fontawesome.com/c3512db6ab.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-darkblue">
+  <main>
+   <header class="fixed top-0 z-30 w-full  bg-blueish" id="header">
+    <nav class="py-2 px-4 md:p-6  w-full bg-sky-950 overflow-hidden">
+    <div x-data="{ open: false }" class=" block md:hidden">
+      <button @click="open = ! open">
+        <i class="text-white fa-solid fa-bars fa-2xl py-4"></i>
+      </button>
+      
+      <div class="capitalize text-white " x-show="open" @click.outside="open = false"  x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 transform scale-90"
+      x-transition:enter-end="opacity-100 transform scale-100"
+      x-transition:leave="transition ease-in duration-300"
+      x-transition:leave-start="opacity-100 transform scale-100"
+      x-transition:leave-end="opacity-0 transform scale-90">
+        <div class="text-white">
+          <a class="text-white font-fold text-lg" href="#home">
+            home
+          </a>
+        </div>
+       <div>
+        <div>
+          <a class="upppercase font-fold text-lg" href="#techstack">
+            techstack
+          </a>
+        </div>
+        <a class="upppercase font-fold text-lg" href="#portfolio">
+          portfolio
+        </a>
+       </div>
+        <div>
+          <a class="upppercase font-fold text-lg" href="#about">
+            contact
+          </a>
+        </div>
+       
+      </div>
+  </div>
+  <div  class="flex flex-wrap items-center justify-center  capitalize hidden md:flex">
+    <div id="homediv" class="text-black font-bold px-4 bg-wheatss py-1  rounded-md mr-2 hover:bg-wheatss hover:text-black">
+      <a href="#home">
+        home
+      </a>
+    </div>
+    <div id="techstackdiv" class="px-4 py-1 font-bold text-white rounded-md mr-2 hover:bg-wheatss hover:text-black">
+      <a href="#techstack">
+        techstack
+      </a>
+    </div>
+   <div id="portfoliodiv" class="px-4 py-1 font-bold text-white rounded-md mr-2 hover:bg-wheatss hover:text-black">
+    <a href="#portfolio">
+      Portfolio
+    </a>
+   </div>
+    <div id="aboutdiv" class="px-4 py-1 font-bold text-white rounded-md mr-2 hover:bg-wheatss hover:text-black">
+      <a href="#about">
+        about
+      </a>
+    </div>
+  </div>
+</nav>
+</header>
+  </main>
+  <section class="h-auto md:h-screen  pt-16 md:pt-40  bg-darkblue mb-6" id="home">
+ 
+    <div class="block md:flex mx-auto ">
+      <div id="pic" class="h-auto w-full md:w-1/2 mx-auto flex justify-center items-center ">
+        <img class="w-48 md:w-80 h-auto"  src="/images/edmond.png" alt="">
+      </div>
+      <div class="text w-full md:w-1/2 p-4 text-justify mt-2 mr-16">
+        <div class="typewriter flex md:block items-center justify-center mb-2">
+          <h1 class="text-wheatss font-bold text-2xl">I'm Jan Edmond De Vera</h1>
+     
+          
+      </div>
+      <div class="typewriter flex  md:block items-center justify-center">
+          <h1 class="text-white uppercase">computer engineer</h1>
+      </div>
+        <h1 class="text-white text-md md:text-lg flex justify-center items-center mx-4 md:mx-auto">
+          Computer engineer adept at developing innovative solutions while utilizing programming knowledge. I recently graduated from University of Rizal System with a degree of Bachelor of Science in Computer Engineering. I am motivated to learn programming languages and enhance my skills in a professional environment.
+        </h1>
+        <div class="icons mt-6 md:block flex justify-center md:items-auto items-center ">
+       <a href="https://www.facebook.com/superman129?mibextid=ZbWKwL" target="_blank" rel="noreferrer noopener">
+        <i class="py-6 px-2 rounded-full hover:bg-white text-white  hover:text-black fa-brands fa-facebook fa-2xl transition duration-300 ease-out hover:ease-in " ></i>
+      </a> 
+        <a href="https://www.linkedin.com/in/jan-edmond-de-vera-93213427b/" target="_blank" rel="noreferrer noopener">
+          <i class="py-6 px-2 rounded-full hover:bg-white text-white  hover:text-black fa-brands fa-linkedin fa-2xl transition duration-300 ease-out hover:ease-in"></i>
+        </a>
+        <a href="https://join.skype.com/invite/xEJLBbSKG1xq" target="_blank" rel="noreferrer noopener">
+          <i class="py-6 px-2 rounded-full hover:bg-white text-white  hover:text-black fa-brands fa-skype fa-2xl transition duration-300 ease-out hover:ease-in"></i>
+        </a>
+        <a href="https://t.me/janedmondd"target="_blank" rel="noreferrer noopener">
+          <i class="py-6 px-2 rounded-full hover:bg-white text-white  hover:text-black fa-brands fa-telegram fa-2xl transition duration-300 ease-out hover:ease-in" ></i>
+        </a>
+       <a href="https://github.com/janedmonddevera"target="_blank" rel="noreferrer noopener">
+        <i class="py-6 px-2 rounded-full hover:bg-white text-white  hover:text-black fa-brands fa-github fa-2xl transition duration-300 ease-out hover:ease-in" ></i>
+      </a> 
+      </div>
+      </div>
+    </div>
+  
+  </section>
+  <section class="h-auto md:h-auto pt-2 md:pt-16  text-white md:mb-20 mt-6 " id="techstack">
+    <h1 class="flex items-center justify-center font-bold text-2xl capitalize" >tech stack</h1>
+    
+    <div class="bg-white p-4 max-w-lg rounded-lg mx-auto m-6">
+      <h1 class="text-black font-bold pl-3"> Languages</h1>
+    <div class="bg-white max-w-lg mt-2 mx-auto rounded-lg flex overflow-x ">
+      <div class="flex w-full overflow-x-scroll ">
+        <img  class="h-20 md:h-24 p-2 " src="/images/html.png" alt="">
+        <img  class="h-20 md:h-24 p-2 align-middle" src="/images/css.png" alt="">
+        <img  class="h-20 md:h-24  p-2 align-middle" src="/images/javascript.png" alt="">
+        <img  class="h-20 md:h-24 p-2 aligh-20 n-middle" src="/images/php.png" alt="">
+        <img  class="h-20 md:h-24 p-2 align-middle" src="/images/python.png" alt="">
+        <img  class="h-20 md:h-24 p-2 align-middle" src="/images/matlab.png" alt="">
+        <img  class="h-20 md:h-24 p-2 align-middle" src="/images/c++.png" alt="">
+        <img  class="h-20 md:h-24 p-2 align-middle" src="/images/arduino.png" alt="">
+        <img  class="h-20 md:h-24  p-2 align-middle" src="/images/java.png" alt="">
+      
+      </div>
+        </div>
+        </div>
+      
+        <div class="bg-white p-4 max-w-lg rounded-lg mx-auto m-6">
+          <h1 class="text-black font-bold pl-3"> Database and Frameworks</h1>
+        <div class="bg-white max-w-lg mt-2 mx-auto rounded-lg flex overflow-x ">
+          <div class="flex w-full overflow-x-scroll ">
+           
+            <img  class="h-20 md:h-24 p-2 align-middle" src="/images/bootstrap.png" alt="">
+            <img  class="h-20 md:h-24  p-2 align-middle" src="/images/tailwind.png" alt="">
+            <img  class="h-20 md:h-24 p-2 align-middle" src="/images/laravel.png" alt="">
+            <img  class="h-20 md:h-24 p-2 align-middle" src="/images/mysql.png" alt="">
+            <img  class="h-20 md:h-24 p-2 align-middle" src="/images/ssms.png" alt="">
+          
+          </div>
+            </div>
+            </div>
+
+    
+        
+</section>
+<div >
+  
+    
+ 
+  
+</div>
+  <section class="h-auto md:h-auto pt-2 md:pt-16  text-white mb-20 " id="portfolio">
+    <h1 class="flex items-center justify-center font-bold text-2xl capitalize mt-2" >Portfolio</h1>
+
+   <!-- portfolio project 1-->
+   
+    <div class="block md:flex mx-auto mt-6 ">
+      <div id="pic" class="h-auto w-full md:w-1/2 mx-auto flex justify-center items-center rounded-md">
+        <div class="block ">
+         
+            <h1 class="capitalize font-bold text-white text-lg pt-2">Non-verbal recognition system</h1>
+
+            <div x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
+              <!-- Trigger for Modal -->
+              <div class="cursor-pointer" type="button" @click="showModal = true">
+                <img class="w-96 h-auto rounded-md hover:border-2 hover:border-wheatss transition duration-150 ease-out hover:ease-out"  src="/images/nvrs.png" alt="">
+              </div>
+             
+          
+              <!-- Modal -->
+              <div class="fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-black bg-opacity-50" x-show="showModal">
+                  <!-- Modal inner -->
+                  <div class="max-w-3xl px-6 py-4 mx-auto text-left bg-slate-300 rounded shadow-lg"  x-transition:enter="motion-safe:ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" >
+                      <!-- Title / Close-->
+                      <div class="flex items-center justify-between">
+                          <h5 class="mr-3 text-black max-w-none font-bold text-2xl">Non-Verbal Recognition System</h5>
+          
+                          <button type="button" class="z-50 cursor-pointer" @click="showModal = false">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#27282a}</style><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                          </button>
+                      </div>
+          
+                      <!-- content -->
+                      <div class="text-black mt-2">
+                        <h1 class="text-md text-justify">
+                          Description: Non-Verbal Recognition is an undergraduate thesis. It is developed to recognize and understand people's non-verbal signs and messages. Non-verbal communication is the exchange of information without the use of spoken or written words gestures, and other non-verbal clues.
+                        </h1>
+                      
+                      </div>
+                     
+                      <div class="mt-2 text-black   ">
+                        <div class="inline-block">
+                                <h1 class="text-md text-justify font-bold mt-2">Tech Stack</h1>
+                        </div>
+                        </div>
+                        <div class="mt-2 text-black    flex ">
+     
+                          <div class="flex inline-block align-middle items-center">
+                            <img src="/images/matlab.png" class="h-auto w-16 align-middle" alt="">
+                            
+                          </div>
+                          <div class="flex align-middle items-center"> 
+                           <h1 class="text-black font-bold text-sm">Matlab</h1>
+                           
+                          </div>
+                      </div>
+                      <div class="mt-2 text-black    flex ">
+     
+                        <div class="flex inline-block align-middle items-center">
+                          <img src="/images/ssms.png" class="h-auto w-16 align-middle" alt="">
+                          
+                        </div>
+                        <div class="flex align-middle items-center"> 
+                         <h1 class="text-black font-bold text-sm capitalize">SQL server management studio</h1>
+                         
+                        </div>
+                    </div>
+                      <div class="mt-2  w-1/2 mx-auto flex  items-center  justify-center">
+                        <a href="https://github.com/janedmonddevera/NVRS-using-MATLAB" target="_blank" rel="noreferrer noopener" class="bg-darkblue py-2 px-4 rounded-lg capitalize hover:bg-slate-600 hover:font-bold ease-out">code</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+        </div>
+       
+        
+      </div>
+         <!-- portfolio project 2-->
+      <div id="pic" class="h-auto w-full md:w-1/2 mx-auto flex justify-center items-center rounded-md">
+        <div class="block ">
+         
+          <h1 class="capitalize font-bold text-white text-lg pt-2">Point of sales</h1>
+
+          <div x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
+            <!-- Trigger for Modal -->
+            <div class="cursor-pointer" type="button" @click="showModal = true">
+              <img class="w-96 h-auto rounded-md hover:border-2 hover:border-wheatss transition duration-150 ease-out hover:ease-out"  src="/images/watsonPOS.png" alt="">
+            </div>
+           
+        
+            <!-- Modal -->
+            <div class="fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-black bg-opacity-50" x-show="showModal">
+                <!-- Modal inner -->
+                <div class="max-w-3xl px-6 py-4 mx-auto text-left bg-slate-300 rounded shadow-lg"  x-transition:enter="motion-safe:ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" >
+                    <!-- Title / Close-->
+                    <div class="flex items-center justify-between">
+                        <h5 class="mr-3 text-black max-w-none font-bold text-2xl">Point of Sales</h5>
+        
+                        <button type="button" class="z-50 cursor-pointer" @click="showModal = false">
+                          <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#27282a}</style><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                        </button>
+                    </div>
+        
+                    <!-- content -->
+                    <div class="text-black mt-2">
+                      <h1 class="text-md text-justify">
+                        Description: Watson's Point-of-Sale was created using visual basic and added database using SQL server management studio 2018 which enable users to keep track of their sales.
+                      </h1>
+                    
+                    </div>
+                   
+                    <div class="mt-2 text-black   ">
+                      <div class="inline-block">
+                              <h1 class="text-md text-justify font-bold mt-2">Tech Stack</h1>
+                      </div>
+                      </div>
+                      <div class="mt-2 text-black    flex ">
+   
+                        <div class="flex inline-block align-middle items-center">
+                          <img src="/images/vb.png" class="h-auto w-16 align-middle" alt="">
+                          
+                        </div>
+                        <div class="flex align-middle items-center"> 
+                         <h1 class="text-black font-bold text-sm">Visual Basic .NET</h1>
+                         
+                        </div>
+                    </div>
+                    <div class="mt-2 text-black    flex ">
+   
+                      <div class="flex inline-block align-middle items-center">
+                        <img src="/images/ssms.png" class="h-auto w-16 align-middle" alt="">
+                        
+                      </div>
+                      <div class="flex align-middle items-center"> 
+                       <h1 class="text-black font-bold text-sm capitalize">SQL server management studio</h1>
+                       
+                      </div>
+                  </div>
+                  <div class="mt-2 text-black    flex ">
+   
+                    <div class="flex inline-block align-middle items-center">
+                      <img src="/images/crystalreport.png" class="h-auto w-16 align-middle" alt="">
+                      
+                    </div>
+                    <div class="flex align-middle items-center"> 
+                     <h1 class="text-black font-bold text-sm capitalize">Crystal Report</h1>
+                     
+                    </div>
+                </div>
+                    <div class="mt-2  w-1/2 mx-auto flex  items-center  justify-center">
+                      <a href="https://github.com/janedmonddevera/watsonPOS" target="_blank" rel="noreferrer noopener" class="bg-darkblue py-2 px-4 rounded-lg capitalize hover:bg-slate-600 hover:font-bold ease-out">code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+      </div>
+     
+      </div>
+      
+    </div>
+     <!-- portfolio project 3-->
+    <div class="block md:flex mx-auto mt-6 ">
+      <div id="pic" class="h-auto w-full md:w-1/2 mx-auto flex justify-center items-center rounded-md">
+        <div class="block ">
+         
+          <h1 class="capitalize font-bold text-white text-lg pt-2">Valorant API</h1>
+
+          <div x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
+            <!-- Trigger for Modal -->
+            <div class="cursor-pointer" type="button" @click="showModal = true">
+              <img class="w-96 h-auto rounded-md hover:border-2 hover:border-wheatss transition duration-150 ease-out hover:ease-out"  src="/images/valoPS.png" alt="">
+            </div>
+           
+        
+            <!-- Modal -->
+            <div class="fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-black bg-opacity-50" x-show="showModal">
+                <!-- Modal inner -->
+                <div class="max-w-3xl px-6 py-4 mx-auto text-left bg-slate-300 rounded shadow-lg"  x-transition:enter="motion-safe:ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" >
+                    <!-- Title / Close-->
+                    <div class="flex items-center justify-between">
+                        <h5 class="mr-3 text-black max-w-none font-bold text-2xl">Valorant API</h5>
+        
+                        <button type="button" class="z-50 cursor-pointer" @click="showModal = false">
+                          <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#27282a}</style><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                        </button>
+                    </div>
+        
+                    <!-- content -->
+                    <div class="text-black mt-2">
+                      <h1 class="text-md text-justify">
+                        Description: Valorant API project was developed to enable users to gain knowledge and understand how different valorant agents works by knowing their skills and also having knowledge and expertise in different guns
+                      </h1>
+                    
+                    </div>
+                   
+                    <div class="mt-2 text-black   ">
+                      <div class="inline-block">
+                              <h1 class="text-md text-justify font-bold mt-2">Tech Stack</h1>
+                      </div>
+                      </div>
+                      <div class="mt-2 text-black    flex ">
+   
+                        <div class="flex inline-block align-middle items-center">
+                          <img src="/images/html.png" class="h-auto w-16 align-middle" alt="">
+                          
+                        </div>
+                        <div class="flex align-middle items-center"> 
+                         <h1 class="text-black font-bold text-sm">HTML5</h1>
+                         
+                        </div>
+                    </div>
+                    <div class="mt-2 text-black    flex ">
+   
+                      <div class="flex inline-block align-middle items-center">
+                        <img src="/images/css.png" class="h-auto w-16 align-middle" alt="">
+                        
+                      </div>
+                      <div class="flex align-middle items-center"> 
+                       <h1 class="text-black font-bold text-sm capitalize">CSS3</h1>
+                       
+                      </div>
+                  </div>
+                  <div class="mt-2 text-black    flex ">
+   
+                    <div class="flex inline-block align-middle items-center">
+                      <img src="/images/javascript.png" class="h-auto w-16 align-middle" alt="">
+                      
+                    </div>
+                    <div class="flex align-middle items-center"> 
+                     <h1 class="text-black font-bold text-sm capitalize">JavaScript</h1>
+                     
+                    </div>
+                </div>
+                    <div class="mt-2  w-1/2 mx-auto flex  items-center  justify-center">
+                      <a href="https://github.com/janedmonddevera/ValorantAPI" target="_blank" rel="noreferrer noopener" class="bg-darkblue py-2 px-4 rounded-lg capitalize hover:bg-slate-600 hover:font-bold ease-out">code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+      </div>
+       
+        
+      </div>
+         <!-- portfolio project 4-->
+      <div id="pic" class="h-auto w-full md:w-1/2 mx-auto flex justify-center items-center rounded-md">
+        <div class="block">
+        
+        <h1 class="capitalize font-bold text-white text-lg pt-2">More projects to come</h1>
+
+        <div x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
+          <!-- Trigger for Modal -->
+          <div class="cursor-pointer" type="button" @click="showModal = true">
+            <img class="w-96 h-auto"  src="/images/imageholder.png" alt="">
+          </div>
+         
+      
+          <!-- Modal -->
+          <div class="fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-black bg-opacity-50" x-show="showModal">
+              <!-- Modal inner -->
+              <div class="max-w-3xl px-6 py-4 mx-auto text-left bg-white rounded shadow-lg" @click.away="showModal = false" x-transition:enter="motion-safe:ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" >
+                  <!-- Title / Close-->
+                  <div class="flex items-center justify-between">
+                      <h5 class="mr-3 text-black max-w-none">To be continued</h5>
+      
+                      <button type="button" class="z-50 cursor-pointer" @click="showModal = false">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#27282a}</style><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                      </button>
+                  </div>
+      
+                  <!-- content -->
+                  <div>hehe</div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+      
+    </div>
+
+</section>
+
+<section class="h-auto md:h-auto pt-2  text-white mb-20 " id="about">
+  
+  <h1 class="flex items-center justify-center font-bold text-2xl capitalize mt-2 mb-4" >about</h1>
+  <div class="flex max-w-lg mx-auto items-center justify-center mt-2 mb-2 ">
+    <div x-data="{ shown: false }" x-intersect:enter="shown = true">
+      <div x-show="shown" x-transition.delay.2000ms x-transition.duration.3000ms >
+         <h1 class="text-sm md:text-lg text-justify px-4 pb-4">
+        I'm a Computer Engineering graduate currently residing in Antipolo, Rizal, Philippines.
+      
+        I did my internship at DATAMATICS CMS Phils. as technical IT support. I also have a National Certificate II in Computer System Servicing. I am eager to learn more computer programming and have prior knowledge in Web development and creating software applications using Visual basic
+      </h1>
+      </div>
+  </div>
+    
+    
+       
+      
+   
+   
+    
+  </div>
+  <div class="flex max-w-lg mx-auto items-center justify-center mt-2 mb-2 ">
+    <a class="py-1 px-4 bg-wheatss hover:bg-slate-600  hover:text-white text-black rounded-md transition-ease-in transition duration-500 font-bold text-md" href="images/Resume-DeVera.pdf" download><button >Download CV</button></a>
+  </div>
+<div class="max-w-lg mx-auto items-center justify-center bg-slate-700 rounded-lg mt-4">
+
+  <form target="_blank" action="https://formsubmit.co/744e4968bde609ce3ee0339e6a98b7a3" method="POST">
+    <div class="md:flex flex-wrap items-center justify-center pt-2 ">
+      <div class="m-4  px-2 py-1 bg-slate-500 text-white text-left rounded-lg mb-6  border-b-2 border-solid">
+        <label class="block font-bold" for="email">Email </label>
+        <input class="bg-slate-500 focus:outline-none w-full" type="email" name="email" id="email" placeholder="" autocomplete="off">
+           
+    </div>
+    <div class="m-4 px-2 py-1 bg-slate-500 text-white text-left rounded-lg mb-6  border-b-2 border-solid">
+      <label class="block font-bold" for="name">Name </label>
+      <input class="bg-slate-500 focus:outline-none w-full " type="text" name="name" id="name" placeholder="" autocomplete="off">
+        
+  </div>
+    </div>
+    
+    <div class="m-4 px-2 py-1 md:m-10 md:mt-0 px-2  bg-slate-500 text-white text-left rounded-lg mb-6  border-b-2 border-solid">
+      <label class="block font-bold" for="email">Message </label>
+      <textarea name="message" rows="3" class="w-full h-auto bg-slate-500">
+
+      </textarea>
+    
+  </div>
+  <div class="flex flex-wrap items-center justify-center">
+ <button type="submit" class="bg-wheatss text-black m-4 mt-0 px-2 py-1 rounded-md md:mx-10 mb-4 w-full font-bold hover:bg-slate-500 hover:text-white transition duration-500">
+  Send Feedback
+  </button>
+  </div>
+
+  </form>
+</div>
+
+</section>
+
+<footer class="bg-blueish h-auto" >
+  <div class="flex flex-wrap max-w-lg mx-auto items-center justify-center">
+  <div class="py-6 px-2">
+    <img class="h-auto w-12" src="/images/upwork.png" alt="">
+  </div>
+  <div class="items-center flex align-middle text-center py-6 px-2 text-white">
+    <h1>You can message me on upwork as well</h1>
+  </div>
+</div>
+</footer>
+  
+<script src="scrollhehe.js"></script>
+</body>
+</html>
