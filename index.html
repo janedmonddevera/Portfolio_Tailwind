@@ -29,22 +29,22 @@
       x-transition:leave-start="opacity-100 transform scale-100"
       x-transition:leave-end="opacity-0 transform scale-90">
         <div class="text-white">
-          <a class="text-white font-fold text-lg" href="#home">
+          <a class="text-white font-fold text-xl" href="#home">
             home
           </a>
         </div>
        <div>
         <div>
-          <a class="upppercase font-fold text-lg" href="#techstack">
+          <a class="upppercase font-fold text-xl" href="#techstack">
             techstack
           </a>
         </div>
-        <a class="upppercase font-fold text-lg" href="#portfolio">
+        <a class="upppercase font-fold text-xl" href="#portfolio">
           portfolio
         </a>
        </div>
         <div>
-          <a class="upppercase font-fold text-lg" href="#about">
+          <a class="upppercase font-fold text-xl" href="#about">
             contact
           </a>
         </div>
@@ -115,10 +115,10 @@
     </div>
   
   </section>
-  <section class="h-auto md:h-auto pt-2 md:pt-16  text-white md:mb-20 mt-6 " id="techstack">
-    <h1 class="flex items-center justify-center font-bold text-xl mdtext-2xl capitalize" >tech stack</h1>
+  <section class="h-auto  pt-2 md:pt-16  text-white md:mb-20 mt-6 mx-auto" id="techstack">
+    <h1 class="flex items-center justify-center font-bold text-xl md:text-2xl capitalize" >tech stack</h1>
     
-    <div class="bg-white  max-w-lg rounded-lg md:mx-auto m-2 ">
+    <div class="bg-white  max-w-lg rounded-lg mx-auto m-2 ">
       <h1 class="text-black font-bold pl-3"> Languages</h1>
     <div class="bg-white max-w-lg mt-2 mx-auto  mx-2 rounded-lg flex ">
       <div class="flex w-full overflow-x-scroll ">
@@ -136,7 +136,7 @@
         </div>
         </div>
       
-        <div class="bg-white p-4 max-w-lg rounded-lg md:mx-auto m-2 mt-4">
+        <div class="bg-white p-4 max-w-lg rounded-lg mx-auto m-2 mt-4">
           <h1 class="text-black font-bold pl-3"> Database and Frameworks</h1>
         <div class="bg-white max-w-lg mt-2 mx-auto rounded-lg flex overflow-x ">
           <div class="flex w-full overflow-x-scroll ">
@@ -165,16 +165,16 @@
 
    <!-- portfolio project 1-->
    
-    <div class="block md:flex mx-auto mt-6 ">
-      <div id="pic" class="h-auto w-full md:w-1/2 mx-auto flex justify-center items-center rounded-md">
+    <div class="block md:flex mx-auto">
+      <div id="pic" class="h-auto w-full md:w-3/4 md:ml-20 mx-auto flex justify-center items-center rounded-md">
         <div class="block ">
          
             <h1 class="capitalize font-bold text-white text-lg pt-2 items-center justify-center flex md:block">Non-verbal recognition system</h1>
 
             <div x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
               <!-- Trigger for Modal -->
-              <div class="cursor-pointer" type="button" @click="showModal = true">
-                <img class="w-80 md:w-96 h-auto md:mx-0 mx-4 rounded-md hover:border-2 hover:border-wheatss transition duration-150 ease-out hover:ease-out"  src="images/nvrs.png" alt="">
+              <div class="cursor-pointer " type="button" @click="showModal = true">
+                <img class="w-80 md:w-96 h-auto md:mx-0 mx-4 rounded-md hover:border-2 hover:border-wheatss transition duration-150 ease-out hover:ease-out "  src="images/nvrs.png" alt="">
               </div>
              
           
@@ -238,15 +238,15 @@
         
       </div>
          <!-- portfolio project 2-->
-      <div id="pic" class="h-auto w-full md:w-1/2 mx-auto flex justify-center items-center rounded-md">
+      <div id="pic" class="h-auto w-full md:w-3/4 md:mr-20 mx-auto flex justify-center items-center rounded-md">
         <div class="block ">
          
           <h1 class="capitalize font-bold text-white text-lg pt-2 items-center justify-center flex md:block">Point of sales</h1>
 
           <div x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
             <!-- Trigger for Modal -->
-            <div class="cursor-pointer" type="button" @click="showModal = true">
-              <img class="w-80 md:w-96 h-auto md:mx-0 mx-4 rounded-md hover:border-2 hover:border-wheatss transition duration-150 ease-out hover:ease-out"  src="images/watsonPOS.png" alt="">
+            <div class="cursor-pointer float-left" type="button" @click="showModal = true">
+              <img class="w-80 md:w-96 h-auto md:mx-0 mx-4 rounded-md hover:border-2 hover:border-wheatss transition duration-150 ease-out hover:ease-out "  src="images/watsonPOS.png" alt="">
             </div>
            
         
@@ -322,8 +322,8 @@
       
     </div>
      <!-- portfolio project 3-->
-    <div class="block md:flex mx-auto mt-6 ">
-      <div id="pic" class="h-auto w-full md:w-1/2 mx-auto flex justify-center items-center rounded-md">
+    <div class="block md:flex mx-auto  ">
+      <div id="pic" class="h-auto w-full md:w-3/4 md:ml-20 mx-auto flex justify-center items-center rounded-md">
         <div class="block ">
          
           <h1 class="capitalize font-bold text-white text-lg pt-2 items-center justify-center flex md:block">Valorant API</h1>
@@ -406,7 +406,7 @@
         
       </div>
          <!-- portfolio project 4-->
-      <div id="pic" class="h-auto w-full md:w-1/2 mx-auto flex justify-center items-center rounded-md">
+      <div id="pic" class="h-auto w-full md:w-3/4 md:mr-20 mx-auto flex justify-center items-center rounded-md">
         <div class="block ">
          
           <h1 class="capitalize font-bold text-white text-lg pt-2 items-center justify-center flex md:block">Point-of-sale using laravel</h1>
