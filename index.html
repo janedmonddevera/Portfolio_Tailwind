@@ -110,37 +110,37 @@
     </div>
   
   </section>
-  <section class="h-auto  pt-2 md:pt-16  text-white md:mb-20 mt-6 mx-auto" id="techstack">
+  <section class=" h-auto  pt-2 md:pt-16  text-white md:mb-20 mt-6 mx-auto" id="techstack">
     <h1 class="flex items-center justify-center font-bold text-xl md:text-2xl capitalize" >tech stack</h1>
     
-    <div class="bg-white  max-w-lg rounded-lg mx-auto m-2 ">
+    <div class="bg-white md:p-4  max-w-lg rounded md:mx-auto m-2 ">
       <h1 class="text-black font-bold pl-3"> Languages</h1>
     <div class="bg-white max-w-lg mt-2 mx-auto  mx-2 rounded-lg flex ">
       <div class="flex w-full overflow-x-scroll ">
-        <img  class="h-20 md:h-24 p-2 " src="images/html.png" alt="">
-        <img  class="h-20 md:h-24 p-2 align-middle" src="images/css.png" alt="">
-        <img  class="h-20 md:h-24  p-2 align-middle" src="images/javascript.png" alt="">
-        <img  class="h-20 md:h-24 p-2 aligh-20 n-middle" src="images/php.png" alt="">
-        <img  class="h-20 md:h-24 p-2 align-middle" src="images/python.png" alt="">
-        <img  class="h-20 md:h-24 p-2 align-middle" src="images/matlab.png" alt="">
-        <img  class="h-20 md:h-24 p-2 align-middle" src="images/c++.png" alt="">
-        <img  class="h-20 md:h-24 p-2 align-middle" src="images/arduino.png" alt="">
-        <img  class="h-20 md:h-24  p-2 align-middle" src="images/java.png" alt="">
+        <img  class="h-14 md:h-24 p-2 " src="images/html.png" alt="">
+        <img  class="h-14 md:h-24 p-2 align-middle" src="images/css.png" alt="">
+        <img  class="h-14 md:h-24  p-2 align-middle" src="images/javascript.png" alt="">
+        <img  class="h-14 md:h-24 p-2 aligh-20 n-middle" src="images/php.png" alt="">
+        <img  class="h-14 md:h-24 p-2 align-middle" src="images/python.png" alt="">
+        <img  class="h-14 md:h-24 p-2 align-middle" src="images/matlab.png" alt="">
+        <img  class="h-14 md:h-24 p-2 align-middle" src="images/c++.png" alt="">
+        <img  class="h-14 md:h-24 p-2 align-middle" src="images/arduino.png" alt="">
+        <img  class="h-14 md:h-24  p-2 align-middle" src="images/java.png" alt="">
       
       </div>
         </div>
         </div>
       
-        <div class="bg-white p-4 max-w-lg rounded-lg mx-auto m-2 mt-4">
+        <div class="bg-white md:p-4 max-w-lg rounded-lg md:mx-auto m-2 mt-4">
           <h1 class="text-black font-bold pl-3"> Database and Frameworks</h1>
         <div class="bg-white max-w-lg mt-2 mx-auto rounded-lg flex overflow-x ">
           <div class="flex w-full overflow-x-scroll ">
            
-            <img  class="h-20 md:h-24 p-2 align-middle" src="images/bootstrap.png" alt="">
-            <img  class="h-20 md:h-24  p-2 align-middle" src="images/tailwind.png" alt="">
-            <img  class="h-20 md:h-24 p-2 align-middle" src="images/laravel.png" alt="">
-            <img  class="h-20 md:h-24 p-2 align-middle" src="images/mysql.png" alt="">
-            <img  class="h-20 md:h-24 p-2 align-middle" src="images/ssms.png" alt="">
+            <img  class="h-14 md:h-24 p-2 align-middle" src="images/bootstrap.png" alt="">
+            <img  class="h-14 md:h-24  p-2 align-middle" src="images/tailwind.png" alt="">
+            <img  class="h-14 md:h-24 p-2 align-middle" src="images/laravel.png" alt="">
+            <img  class="h-14 md:h-24 p-2 align-middle" src="images/mysql.png" alt="">
+            <img  class="h-14 md:h-24 p-2 align-middle" src="images/ssms.png" alt="">
           
           </div>
             </div>
@@ -481,6 +481,168 @@
       
       </div>
       </div>
+    </div>
+<!--project 5-->
+
+
+   
+ <div class="block md:flex mx-auto">
+  <div id="pic" class="h-auto w-full md:w-3/4 md:ml-20 mx-auto flex justify-center items-center rounded-md">
+    <div class="block ">
+     
+        <h1 class="capitalize font-bold text-white text-lg pt-2 items-center justify-center flex md:block">Enrollment System</h1>
+
+        <div x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
+          <!-- Trigger for Modal -->
+          <div class="cursor-pointer " type="button" @click="showModal = true">
+            <img class="w-80 md:w-96 h-auto md:mx-0  rounded-md hover:border-2 hover:border-wheatss transition duration-150 ease-out hover:ease-out "  src="images/enrollmentsystem.png" alt="">
+          </div>
+         
+      
+          <!-- Modal -->
+          <div class="fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-black bg-opacity-50" x-show="showModal">
+              <!-- Modal inner -->
+              <div class="max-w-3xl px-6 py-4 mx-auto text-left bg-slate-300 rounded shadow-lg"  x-transition:enter="motion-safe:ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" >
+                  <!-- Title / Close-->
+                  <div class="flex items-center justify-between">
+                      <h5 class="mr-3 text-black max-w-none font-bold text-2xl">Enrollment System</h5>
+      
+                      <button type="button" class="z-50 cursor-pointer" @click="showModal = false">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#27282a}</style><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                      </button>
+                  </div>
+      
+                  <!-- content -->
+                  <div class="text-black mt-2">
+                    <h1 class="text-md text-justify">
+                      Description: An enrolment system is a piece of software that organizations and educational institutions use to control the enrollment of people into memberships, programs, and courses. It automates processes like scheduling, payment processing, course selection, registration, record keeping, communication, and reporting. In order to ensure accurate record keeping and effective management of enrollments, the system intends to simplify and streamline the enrollment process for administrators as well as participants.
+                    </h1>
+                  
+                  </div>
+                 
+                  <div class="mt-2 text-black   ">
+                    <div class="inline-block">
+                            <h1 class="text-md text-justify font-bold mt-2">Tech Stack</h1>
+                    </div>
+                    </div>
+                    <div class="mt-2 text-black    flex ">
+ 
+                      <div class="flex inline-block align-middle items-center">
+                        <img src="images/java.png" class="h-auto w-16 align-middle" alt="">
+                        
+                      </div>
+                      <div class="flex align-middle items-center"> 
+                       <h1 class="text-black font-bold text-sm">JAVA</h1>
+                       
+                      </div>
+                  </div>
+                  <div class="mt-2 text-black    flex ">
+ 
+                    <div class="flex inline-block align-middle items-center">
+                      <img src="images/mysql.png" class="h-auto w-16 align-middle" alt="">
+                      
+                    </div>
+                    <div class="flex align-middle items-center"> 
+                     <h1 class="text-black font-bold text-sm capitalize">mysql</h1>
+                     
+                    </div>
+                </div>
+                  <div class="mt-2  w-1/2 mx-auto flex  items-center  justify-center">
+                    <a href="https://github.com/janedmonddevera/NVRS-using-MATLAB" target="_blank" rel="noreferrer noopener" class="bg-darkblue py-2 px-4 rounded-lg capitalize hover:bg-slate-600 hover:font-bold ease-out">code</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+    </div>
+   
+    
+  </div>
+     <!-- portfolio project 6-->
+  <div id="pic" class="h-auto w-full md:w-3/4 md:mr-20 mx-auto flex justify-center items-center rounded-md">
+    <div class="block ">
+     
+      <h1 class="capitalize font-bold text-white text-lg pt-2 items-center justify-center flex md:block">More projects to comes</h1>
+
+      <div x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
+        <!-- Trigger for Modal -->
+        <div class="cursor-pointer float-left" type="button" @click="showModal = true">
+          <img class="w-80 md:w-96 h-auto md:mx-0  rounded-md hover:border-2 hover:border-wheatss transition duration-150 ease-out hover:ease-out "  src="images/imageholder.png" alt="">
+        </div>
+       
+    
+        <!-- Modal -->
+        <div class="fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-black bg-opacity-50" x-show="showModal">
+            <!-- Modal inner -->
+            <div class="max-w-3xl px-6 py-4 mx-auto text-left bg-slate-300 rounded shadow-lg"  x-transition:enter="motion-safe:ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" >
+                <!-- Title / Close-->
+                <div class="flex items-center justify-between">
+                    <h5 class="mr-3 text-black max-w-none font-bold text-2xl">more projects to come</h5>
+    
+                    <button type="button" class="z-50 cursor-pointer" @click="showModal = false">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#27282a}</style><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </button>
+                </div>
+    
+                <!-- content -->
+                <div class="text-black mt-2">
+                  <h1 class="text-md text-justify">
+                    Description: Just keep coding!!!!
+                  </h1>
+                
+                </div>
+               
+                <div class="mt-2 text-black   ">
+                  <div class="inline-block">
+                          <h1 class="text-md text-justify font-bold mt-2">Tech Stack</h1>
+                  </div>
+                  </div>
+                  <div class="mt-2 text-black    flex ">
+
+                    <div class="flex inline-block align-middle items-center">
+                      <img src="" class="h-auto w-16 align-middle" alt="">
+                      
+                    </div>
+                    <div class="flex align-middle items-center"> 
+                     <h1 class="text-black font-bold text-sm"></h1>
+                     
+                    </div>
+                </div>
+                <div class="mt-2 text-black    flex ">
+
+                  <div class="flex inline-block align-middle items-center">
+                    <img src="" class="h-auto w-16 align-middle" alt="">
+                    
+                  </div>
+                  <div class="flex align-middle items-center"> 
+                   <h1 class="text-black font-bold text-sm capitalize"></h1>
+                   
+                  </div>
+              </div>
+              <div class="mt-2 text-black    flex ">
+
+                <div class="flex inline-block align-middle items-center">
+                  <img src="" class="h-auto w-16 align-middle" alt="">
+                  
+                </div>
+                <div class="flex align-middle items-center"> 
+                 <h1 class="text-black font-bold text-sm capitalize"></h1>
+                 
+                </div>
+            </div>
+                <div class="mt-2  w-1/2 mx-auto flex  items-center  justify-center">
+                  <a href="" target="_blank" rel="noreferrer noopener" class="bg-darkblue py-2 px-4 rounded-lg capitalize hover:bg-slate-600 hover:font-bold ease-out">code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  </div>
+ 
+  </div>
+  
+</div>
+   <!-- end-->
       
     </div>
 
